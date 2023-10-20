@@ -15,12 +15,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form method="post">
-        <input type="text" name="username" placeholder="Nazwa użytkownika"><br>
-        <input type="password" name="password" placeholder="Hasło"><br><br>
-        <input type="submit" name="submit" value="Rejestracja"><br><br>
-        <a href="logowanie.php">Posiadam konto</a>
-    </form>
+    <div class="all">
+        <form method="post">
+            <h1>Zarejestruj się</h1>
+            <div class="txt_field">
+                <input type="text" name="username" placeholder="Nazwa użytkownika"><br>
+                <input type="password" name="password" placeholder="Hasło"><br><br>
+            </div>
+                <input type="submit" name="submit" value="Rejestracja" class="submit"><br><br><br>
+            <div class="rejestracja">
+                <p>Posiadasz konto? <a href="logowanie.php">Logowanie</a></p>
+            </div>    
+        </form>    
+    </div>        
 </body>
 </html>
 <?php
@@ -46,6 +53,7 @@
             echo "Konto zostało utworzone";
             header("Location: logowanie.php");        
         }
+
     }
     
     mysqli_close($conn);

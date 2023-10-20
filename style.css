@@ -1,4 +1,4 @@
-* {
+.all {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -48,7 +48,7 @@ body {
 
 
 input {
-    width: 100%;
+    width: 90%;
     background: transparent;
     border: none;
     outline: none;
@@ -69,7 +69,7 @@ input::placeholder {
 .all .submit{
     width: 100%;
     background: white;
-    border: none;
+    border: 3px solid white;
     outline: none;
     border-radius: 40px;
     box-shadow: 0 0 10px rgba(0, 0 , 0 .1);
@@ -81,6 +81,7 @@ input::placeholder {
     text-decoration: none;
     padding: 15px 45px;
     margin-bottom: 0;
+    transition: 0.5s;
 }
 
 
@@ -88,4 +89,15 @@ input::placeholder {
     text-decoration: none;
     text-align: center;
 }
+
+
+
+
+.submit:hover{
+    border-radius: 40px;
+    font-weight: 600;
+    transform: scale(1.08);
+    cursor: pointer;
+}
+
 

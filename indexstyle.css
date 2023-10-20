@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playpen Sans', cursive;
+}
+
+
+body .all {
+    align-items: top;
+    background-image: url(pizza_tlo.jpg);
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    padding: 30px 10%;
+}
+
+
+a:link, a:visited {
+    text-decoration: none;
+}
+
+
+.buttons {
+    list-style: none;
+}
+
+
+.buttons li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+
+.buttons li a {
+    transition: all 0.35s ease 0s;
+    color: white;
+    border: 2px solid white;
+    padding: 12px 30px;
+    background-color: black;
+    border-radius: 17px;
+    font-size: 18px;
+}
+
+
+.buttons li a:hover {
+    transition: 0.35s ease;
+    border: 2px solid rgb(229, 170, 60);
+    color: rgb(229, 170, 60);
+    cursor: pointer;
+
+}
+
+
+.submit {
+    transition: 0.35s ease-in-out;
+    text-decoration: none;
+    border: 3px solid rgb(0, 0, 0);
+    outline: none;
+    border-radius: 17px;
+    padding: 12px 30px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+.submit:hover {
+    transition: 0.35s ease-in-out;
+    border: 3px solid rgb(255, 255, 255);
+}

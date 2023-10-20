@@ -42,30 +42,22 @@
 
     $errflag = false;
 
-        if(empty($username)) {
-            echo 'Nie podano nazwy';
+        if(empty($username) || empty($password)) {
+            echo 'Niepoprawne dane logowania';
             $errflag=true;
-        }
-        if(empty($password)) {
-            echo 'Nie podano hasła';
-            $errflag=true;
-
         }
 
         if($errflag == false) {
-            echo "pies3";
 
 
             $result = mysqli_query($conn, "select haslo from user where user = '$username'")
                         or die("Nie udało się połączyć z bazą danych");
 
                         if (mysqli_num_rows($result) > 0) {
-                            echo "pies";
+
                             if($row = mysqli_fetch_assoc($result)) {
-                                echo "pies1";
-                                echo $row["haslo"];
+
                                 if(password_verify($password, $row["haslo"])) {
-                                    echo "pies2";
                                     $_SESSION["Logged"] = true;
                                     header("Location: index.php");
                                 }
@@ -73,8 +65,8 @@
                             
                         }    
         }
-            }            
-    
+            }
+
     mysqli_close($conn);
 
 ?>
