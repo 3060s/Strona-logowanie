@@ -20,9 +20,9 @@
         </form>
 
     <ul class="buttons">
-        <li><a href="https://www.youtube.com/watch?v=EB-wxKVu788">O nas</a></li>
-        <li><a href="https://www.youtube.com/watch?v=EB-wxKVu788">Menu</a></li>
-        <li><a href="https://www.youtube.com/watch?v=EB-wxKVu788">Kontakt</a></li>  
+        <li><a href="O_nas.php">O nas</a></li>
+        <li><a target="_blank" href="https://www.youtube.com/watch?v=EB-wxKVu788">Menu</a></li>
+        <li><a target="_blank" href="https://www.youtube.com/watch?v=EB-wxKVu788">Kontakt</a></li>  
     </ul>
     </div>
 </body>
