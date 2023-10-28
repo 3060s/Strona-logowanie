@@ -11,7 +11,7 @@
 
 body .all {
     align-items: top;
-    background-image: url(pizza_tlo.jpg);
+    background-image: url("../img/pizza_tlo.jpg");
     justify-content: space-between;
     background-repeat: no-repeat;
     background-size: cover;

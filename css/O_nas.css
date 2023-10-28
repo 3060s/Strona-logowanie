@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@600&family=Poppins&display=swap');
+
+
+body {
+    /*align-items: center;
+    justify-content: center;*/
+    background-color: rgb(36, 164, 138);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.napis {
+    align-items: top;
+    width: 100%;
+    text-align: center;
+    font-size: 26px;
+}
+
+
+.informacje {
+    display: flex;
+}
+
+
+table {
+    margin: 200px 20px 20px 200px;
+	border-collapse: separate;/*12*/
+}
+
+
+table .td1 {
+    width: 30%;
+    float: left;
+	text-align: left;
+    font-size: 20px;
+}
+
+
+table .td2 {
+    float: right;
+    text-align: right;
+    margin-right: 400px;
+}
+
+
+a:link, a:visited {
+    text-decoration: none;
+}
+
+
+.buttons {
+    list-style: none;
+}
+
+
+.buttons li {
+    display: inline-block;
+    padding-top: 20px;
+}
+
+
+.buttons li a {
+    transition: all 0.35s ease 0s;
+    color: white;
+    border: 2px solid white;
+    padding: 12px 30px;
+    background-color: black;
+    border-radius: 17px;
+    font-size: 18px;
+}
+
+
+.buttons li a:hover {
+    transition: 0.35s ease;
+    border: 2px solid rgb(36, 164, 138);
+    color: rgb(36, 164, 138);
+    cursor: pointer;
+
+}
+
+
+img {
+    border-radius: 30px;
+    transition: all 0.35s ease 0s;
+}
+
+
+img:hover{
+    transform:scale(1.2);
+    cursor: pointer;
+}
